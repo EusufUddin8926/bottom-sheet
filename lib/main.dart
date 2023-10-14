@@ -69,6 +69,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               subtitle:
                                   Text(listData[index]['subTitle'].toString()),
                               trailing: Icon(Icons.comment),
+                              onTap: () {
+                                print(listData[index]['title'].toString());
+                              },
                             ),
                           );
                         },
